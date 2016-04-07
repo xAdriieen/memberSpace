@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #B7A9A3;
+/*    background-image: url(../img/portaiiii.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+
+.triangle {
+    z-index: 999999;
+    opacity: 1;
+    top: 0;
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-top: 101vh solid black;
+    border-left: 100vw solid transparent;
+    transition: .5s cubic-bezier(.5,1,.5,1);
+}
+
+.triangle2 {
+    z-index: 999999;
+    opacity: 1;
+    bottom: 0;
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-bottom: 101vh solid black;
+    border-right: 100vw solid transparent;
+    transition: .5s cubic-bezier(.5,1,.5,1);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: -70px;
+    width: 71px;
+    height: 100%;
+    background-color: #232C3E;
+    transition: .3s cubic-bezier(.5,1,.5,1);
+}
+
+
+.section1 {
+    margin-top: 70px;
+}
+
+.imguser {
+    width: 60px;
+    margin: 5px;
+    border-radius: 1px;
+    float: left;
+}
+
+.trimenu {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #CCCCCC;
+    float: left;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+
+.trimenu:hover {
+    border-top: 10px solid white;
+}
+
+.imguser:hover ~ .trimenu {
+    border-top: 10px solid white;
+}
